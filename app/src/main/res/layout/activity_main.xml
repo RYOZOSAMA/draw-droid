@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="95dp">
+
+            <!--左手-->
+            <View
+                android:id="@+id/droid_arm_left"
+                android:layout_width="40dp"
+                android:layout_height="110dip"
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/droid_arm" />
+
+            <View
+                android:id="@+id/droid_body"
+                android:layout_width="170dip"
+                android:layout_height="155dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="38dp"
+                android:background="@drawable/droid_body_and_leg" />
+
+            <View
+                android:id="@+id/droid_arm_right"
+                android:layout_width="40dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/droid_body"
+
+                android:background="@drawable/droid_arm" />
+
+
+            <View
+                android:id="@+id/droid_head"
+                android:layout_width="170dip"
+                android:layout_height="160dip"
+
+                android:background="@drawable/droid_head"
+                android:layout_alignTop="@+id/view2"
+                android:layout_toRightOf="@+id/droid_arm_left"
+                android:layout_toEndOf="@+id/droid_arm_left" />
+
+            <View
+                android:id="@+id/droid_body_margin"
+                android:layout_width="170dip"
+                android:layout_height="10dip"
+                android:layout_alignBottom="@+id/droid_head"
+                android:layout_marginBottom="80dip"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="50dip"
+                android:background="@color/colorAccent" />
+
+            <View
+                android:id="@+id/droid_eye_left"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_marginLeft="90dip"
+                android:layout_marginTop="55dip"
+
+                android:background="@drawable/droid_eye" />
+
+            <View
+                android:id="@+id/droid_eye_right"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_marginLeft="167dip"
+                android:layout_marginTop="55dip"
+
+                android:background="@drawable/droid_eye" />
+            <!--左耳-->
+            <View
+                android:id="@+id/left_ear"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignLeft="@+id/droid_eye_left"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/droid_eye_left"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignLeft="@+id/droid_eye_left"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/droid_eye_left"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignLeft="@+id/droid_eye_left"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/droid_eye_left"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/droid_ear"
+                android:id="@+id/view2" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignLeft="@+id/droid_eye_left"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/droid_eye_left"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignLeft="@+id/droid_eye_left"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/droid_eye_left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/droid_ear"
+                android:id="@+id/view" />
+
+            <!--右耳-->
+            <View
+                android:id="@+id/right_ear"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignEnd="@+id/droid_eye_right"
+                android:layout_alignRight="@+id/droid_eye_right"
+                android:layout_alignTop="@+id/left_ear"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignEnd="@+id/droid_eye_right"
+                android:layout_alignRight="@+id/droid_eye_right"
+                android:layout_alignTop="@+id/left_ear"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignEnd="@+id/droid_eye_right"
+                android:layout_alignRight="@+id/droid_eye_right"
+                android:layout_alignTop="@+id/left_ear"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignEnd="@+id/droid_eye_right"
+                android:layout_alignRight="@+id/droid_eye_right"
+                android:layout_alignTop="@+id/left_ear"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/droid_ear" />
+
+            <View
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignEnd="@+id/droid_eye_right"
+                android:layout_alignRight="@+id/droid_eye_right"
+                android:layout_alignTop="@+id/left_ear"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/droid_ear" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>
